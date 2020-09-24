@@ -1,0 +1,31 @@
+<center><h1>COUNT </h1>
+  <a href = "/"> Start again</a><br /><br />
+  <hr />
+</center>
+
+Count is {{ count }} words
+
+<h2> Your text: </h2>
+{{ fulltext }}
+
+<h2> Words Split into list </h2>
+
+{{ wordlist }}
+
+<h2> Words Dictionary </h2>
+
+{{ dictionary }}
+
+<h2> Top 10 Words as List </h2>
+
+{{ wordtotals }}
+
+<h2> 10 Most Popular Words </h2>
+<!--  for word, totals in wordtotals:
+      print(f"{word} = {totals}")
+-->
+{% for word, total in wordtotals %}
+
+  {{ word }} = {{ total }} <br/>
+
+{% endfor %}

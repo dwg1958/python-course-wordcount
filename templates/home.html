@@ -1,0 +1,21 @@
+<center><h1>WORDCOUNTER</h1></center>
+
+<hr>
+<br/>
+
+<center>
+    This is {{pagename}} <br/><br/><br/>
+    <a href="/">Home page</a>
+    ~
+    <a href="/david">Davids page</a>
+    ~
+    <a href="/about">About</a>
+    <br /><br /><br />
+
+<form action="{% url 'count' %}">
+  <textarea name="fulltext" rows="8" cols="50"></textarea>
+  <br /><br />
+  <input type="submit" value="Count Words" />
+<form>
+
+</center>
