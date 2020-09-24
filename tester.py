@@ -16,3 +16,5 @@ for word, totals in wordtotals:
   print(f"{word} = {totals}")
 
 # endfor
+
+print('Making a change to test GIT')
