@@ -60,4 +60,53 @@ GIT CRIB SHEET
 
  4. NOW CHANGE SOME CODE IN A FILE
  TYPE : git status
- 
+ "
+     On branch master
+     Your branch is up to date with 'origin/master'.
+
+     Changes not staged for commit:
+       (use "git add <file>..." to update what will be committed)
+       (use "git restore <file>..." to discard changes in working directory)
+     	modified:   tester.py
+
+     Untracked files:
+       (use "git add <file>..." to include in what will be committed)
+     	GIT_CRIB_SHEET.txt
+
+     no changes added to commit (use "git add" and/or "git commit -a")
+     davidgriffiths@Davids-MacBook-Air wordcount_project %
+ "
+
+ 5. COMMIT CHANGES TO Git
+ TYPE: git commit -m"second commit"
+"
+    [master 035185b] second commit
+     Committer: David Griffiths <davidgriffiths@Davids-MacBook-Air.local>
+    Your name and email address were configured automatically based
+    on your username and hostname. Please check that they are accurate.
+    You can suppress this message by setting them explicitly:
+
+        git config --global user.name "Your Name"
+        git config --global user.email you@example.com
+
+    After doing this, you may fix the identity used for this commit with:
+
+        git commit --amend --reset-author
+
+     2 files changed, 65 insertions(+)
+     create mode 100644 GIT_CRIB_SHEET.txt
+"
+========= NOW UPLOAD TO GITHUB ===========================
+TYPE: git push -u origin master
+"
+    Enumerating objects: 6, done.
+    Counting objects: 100% (6/6), done.
+    Delta compression using up to 4 threads
+    Compressing objects: 100% (4/4), done.
+    Writing objects: 100% (4/4), 1.19 KiB | 1.19 MiB/s, done.
+    Total 4 (delta 2), reused 0 (delta 0)
+    remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+    To https://github.com/dwg1958/python-course-wordcount.git
+       7606ab8..035185b  master -> master
+    Branch 'master' set up to track remote branch 'master' from 'origin'.
+"
